@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://kit.fontawesome.com/c54fbe62a7.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="input-segment1">
+
+        <div class="name"><strong>Name</strong><span>*</span></div>
+        <div class="input-wrapper">
+
+          <div>
+            <input type="text" name="firstName" id="firstName" size="25" required>
+            <div><label class="fname-label" for="firstName">First</label></div>
+          </div>
+
+          <div class="name-margin">
+            <input type="text" name="lastName" id="lastName" size="25" required>
+            <div><label for="lastName" class="lname-label">Last</label></div>
+          </div>
+        </div>
+        <div class="email">
+          <label for="email" required>Email<span>*</span></label> <br>
+          <input type="email" id="email" name="email" size="30">
+        </div>
+
+        <!--name-->
+        <section>
+        </section>
+      </div>
+      <!--email-->
+      <section>
+        <div class="your-experience">
+          <div class="star-rating">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+          Overall, how would you rate your experience with us?
+        </div>
+      </section>
+      <table class="table-content">
+        <tr class="for-responsive">
+          <td></td>
+          <td>Very Unsatisfied</td>
+          <td>Unsatisfied</td>
+          <td>Neutral</td>
+          <td>Satisfied</td>
+          <td>Very Satified</td>
+        </tr>
+        <tr>
+          <td>Purchase</td>
+          <td><input type="radio" name="purchase" id="purchase" value="Very Unsatisfied">
+            <div class="extra">Very Unsatisfied</div>
+          </td>
+          <td><input type="radio" name="purchase" id="purchase" value="Unsatisfied">
+            <div class="extra">Unsatisfied</div>
+          </td>
+          <td><input type="radio" name="purchase" id="purchase" value="Neutral">
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" name="purchase" id="purchase" value="Satisfied">
+            <div class="extra">Satisfied</div>
+          </td>
+          <td><input type="radio" name="purchase" id="purchase" value="Very Satified">
+            <div class="extra">Very Satified</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Service</td>
+          <td><input type="radio" required name="service" id="service" value="Very Unsatisfied">
+            <div class="extra">Very Unsatisfied</div>
+          </td>
+          <td><input type="radio" required name="service" id="service" value="Unsatisfied">
+            <div class="extra">Unsatisfied</div>
+          </td>
+          <td><input type="radio" required name="service" id="service" value="Neutral">
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" required name="service" id="service" value="Satisfied">
+            <div class="extra">Satisfied</div>
+          </td>
+          <td><input type="radio" required name="service" id="service" value="Very Satified">
+            <div class="extra">Very Satified</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Company Overall</td>
+          <td><input type="radio" required name="company" id="company" value="Very Unsatisfied">
+            <div class="extra">Very Unsatisfied</div>
+          </td>
+          <td><input type="radio" required name="company" id="company" value="Unsatisfied">
+            <div class="extra">Unsatisfied</div>
+          </td>
+          <td><input type="radio" required name="company" id="company" value="Neutral">
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" required name="company" id="company" value="Satisfied">
+            <div class="extra">Satisfied</div>
+          </td>
+          <td><input type="radio" required name="company" id="company" value="Very Satified">
+            <div class="extra">Very Satified</div>
+          </td>
+        </tr>
+      </table>
+      <div><strong>How likely you are to<span>*</span></strong></div>
+      <table class="table-content">
+        <tr class="for-responsive">
+          <td></td>
+          <td>Very Unlikely</td>
+          <td>Unlikely</td>
+          <td>Neutral</td>
+          <td>Likely</td>
+          <td>Most Likely</td>
+        </tr>
+        <tr>
+          <td>Buy from us again</td>
+          <td><input type="radio" name="buy" required id="buy" value="Very Unlikely">
+            <div class="extra">Very Unlikely</div>
+          </td>
+          <td><input type="radio" name="buy" id="buy" required value="Unlikely">
+            <div class="extra">Unlikely</div>
+          </td>
+          <td><input type="radio" name="buy" id="buy" required value="Neutral">
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" name="buy" id="buy" value="Likely" required>
+            <div class="extra">Likely</div>
+          </td>
+          <td><input type="radio" name="buy" id="buy" value="Most Likely" required>
+            <div class="extra">Most Likely</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Recommend our products to others</td>
+          <td><input type="radio" name="prod-reco" id="prod-reco" value="Very Unlikely" required>
+            <div class="extra">Very Unlikely</div>
+          </td>
+          <td><input type="radio" name="prod-reco" id="prod-reco" value="Unlikely" required>
+            <div class="extra">Unlikely</div>
+          </td>
+          <td><input type="radio" name="prod-reco" id="prod-reco" value="Neutral" required>
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" name="prod-reco" id="prod-reco" value="Likely" required>
+            <div class="extra">Likely</div>
+          </td>
+          <td><input type="radio" name="prod-reco" id="prod-reco" value="Most Likely" required>
+            <div class="extra">Most Likely</div>
+          </td>
+        </tr>
+        <tr>
+          <td>Recommend our company to others</td>
+          <td><input type="radio" name="company-reco" id="company-reco" value="Very Unlikely" required>
+            <div class="extra">Very Unlikely</div>
+          </td>
+          <td><input type="radio" name="company-reco" id="company-reco" value="Unlikely" required>
+            <div class="extra">Unlikely</div>
+          </td>
+          <td><input type="radio" name="company-reco" id="company-reco" value="Neutral" required>
+            <div class="extra">Neutral</div>
+          </td>
+          <td><input type="radio" name="company-reco" id="company-reco" value="Likely" required>
+            <div class="extra">Likely</div>
+          </td>
+          <td><input type="radio" name="company-reco" id="company-reco" value="Most Likely" required>
+            <div class="extra">Most Likely</div>
+          </td>
+        </tr>
+      </table>
+      <div class="suggestions">Additonal comments or suggestions</div>
+      <textarea name="comments" id="comments" cols="100" rows="5"></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
